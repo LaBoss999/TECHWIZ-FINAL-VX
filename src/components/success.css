@@ -1,0 +1,113 @@
+/* General container styling */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.appointment-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+
+  #logo{
+    width: 50px;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 250px;
+    background-color: #0080ff;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .sidebar .logo img {
+    width: 100%;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 20px 0 40px;
+    font-size: 1.2rem;
+    color: black;
+  }
+  
+  .sidebar nav ul li.active {
+    font-weight: bold;
+  }
+  
+  .sidebar nav ul li:hover {
+    cursor: pointer;
+    color: white; /* Optional hover effect */
+  }
+  
+  /* Main content styling */
+  .appointment-content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .appointment-content header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .user-info span {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  /* Submission message */
+  .submission-message {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .submission-icon img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .submission-message h2 {
+    color: #007f3d;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .submission-message p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+  }
+  

@@ -1,0 +1,141 @@
+/* General container styling */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.appointment-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+
+  #logo{
+    width: 50px;
+  }
+  .sidebar {
+    width: 250px;
+    background-color: #0080ff;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+  }
+  
+  .sidebar .logo img {
+    width: 100%;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  #active{
+    color: white            ;
+  }
+  
+  .sidebar nav ul li {
+    margin: 20px 0 40px;
+    font-size: 1.2rem;
+    color: black;
+  }
+  
+  .sidebar nav ul li.active {
+    font-weight: bold;
+  }
+  
+  .sidebar nav ul li:hover {
+    cursor: pointer;
+    color: white; /* Optional hover effect */
+  }
+  
+  /* Main content styling */
+  .appointment-content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .appointment-content header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .user-info span {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  /* Submission message */
+  .med button{
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  #frequency{
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  #frequency li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  #vidContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  #vidContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  video {
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  video:fullscreen {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+  }
+  
